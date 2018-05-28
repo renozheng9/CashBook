@@ -1,0 +1,11 @@
+<!--pages/former1/former1.wxml-->
+
+    <swiper autoplay='true' duration='1000' bindchange='listenSwiper'>
+        <block wx:for="{{imgs}}" wx:for-index="index">
+          <swiper-item class="swiper-items"  >
+            <image class="swiper-image" src="{{item}}"></image>
+            <button class="button-img" bindtap="start" wx:if="{{index == imgs.length - 1}}" >Begin</button>
+          </swiper-item>
+        </block>
+    </swiper>
+
